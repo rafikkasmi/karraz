@@ -1,0 +1,101 @@
+.modal {
+  min-width: 80%;
+  max-height: 80%;
+}
+
+.modal .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal .container .imageModal {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .container .imageModal img {
+  width: 50%;
+}
+
+.modal .container .paratext {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .container .paratext .infos {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "input input " "input input " "bu bu ";
+  grid-gap: 10px;
+}
+
+.modal .container .paratext .infos input[type=text] {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: input;
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+  margin: 0 0 7px 0;
+  border: 1px lightgrey solid;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.modal .container .paratext .infos label {
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+  font-size: 12px;
+}
+
+.modal .container .paratext .infos input[type=submit] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: bu;
+  font-family: 'Cairo', sans-serif;
+  width: 120px;
+  height: 46px;
+  margin: auto;
+  border: none;
+  background: linear-gradient(135deg, rgba(255, 123, 10, 0.76), rgba(230, 14, 125, 0.69));
+  border-radius: 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    min-width: 80%;
+    min-height: 300px;
+  }
+  .modal .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=modal.css.map */
