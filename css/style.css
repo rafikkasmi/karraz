@@ -581,33 +581,31 @@ header .navlinks a:hover {
 
 #paperheart main path {
   stroke: #c73b4e;
-  fill: #c73b4e;
+  fill: transparent;
 }
 
 #paperheart main .animated {
-  fill-opacity: 0;
-  stroke-width: 10px;
+  stroke-width: 30px;
   stroke-dasharray: 5900;
   stroke-dashoffset: 5900;
-  -webkit-animation: draw 2s forwards linear;
-          animation: draw 2s forwards linear;
+  -webkit-animation: draw 5s forwards linear;
+          animation: draw 5s forwards linear;
+  fill: #c73b4e;
+  -webkit-transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
+  -webkit-transition-delay: 5s;
+          transition-delay: 5s;
 }
 
 @-webkit-keyframes draw {
-  99% {
+  to {
     stroke-dashoffset: 0;
-  }
-  100% {
-    fill-opacity: 1;
   }
 }
 
 @keyframes draw {
-  99% {
+  to {
     stroke-dashoffset: 0;
-  }
-  100% {
-    fill-opacity: 1;
   }
 }
 
