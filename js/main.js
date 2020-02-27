@@ -165,7 +165,7 @@ const Sync = () => {
     titleDom.innerHTML = SLIDES_DATA[current - 1].Title
     writerDom.innerHTML = SLIDES_DATA[current - 1].Writer
     summaryDom.innerHTML = SLIDES_DATA[current - 1].Summary
-    imageDom.setAttribute("src", `/imgs/Books/${current}.jpg`)
+    imageDom.setAttribute("src", `./imgs/Books/${current}.jpg`)
     document.querySelector(".BookDetails").classList.add('animated', 'fadeIn')
 }
 
