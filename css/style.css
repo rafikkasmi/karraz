@@ -21,6 +21,15 @@
   font-size: 30px;
 }
 
+.faded {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 2s ease;
+  transition: -webkit-transform 2s ease;
+  transition: transform 2s ease;
+  transition: transform 2s ease, -webkit-transform 2s ease;
+}
+
 .header-fixed {
   background: white;
   height: 9vh;
@@ -31,7 +40,7 @@
 
 .header-fixed .logo {
   height: 50px;
-  fill: #E60E7D;
+  fill: #ea5a9f;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -124,7 +133,7 @@ header .navlinks a:hover {
 }
 
 #first {
-  background: linear-gradient(125.78deg, rgba(255, 123, 10, 0.94) 3.49%, rgba(230, 14, 125, 0.84) 98.99%);
+  background: linear-gradient(125.78deg, #5ea0ed 3.49%, #ea5a9f 95.99%);
 }
 
 #first .base {
@@ -165,7 +174,7 @@ header .navlinks a:hover {
           transform: translateX(50%);
   -webkit-animation: bounce 2s infinite;
           animation: bounce 2s infinite;
-  fill: #fe811a;
+  fill: #ea5a9f;
 }
 
 @-webkit-keyframes bounce {
@@ -325,7 +334,7 @@ header .navlinks a:hover {
   width: 120px;
   height: 46px;
   border: none;
-  background: linear-gradient(135deg, rgba(255, 123, 10, 0.76), rgba(230, 14, 125, 0.69));
+  background: linear-gradient(135deg, #5ea0ed, #ea5a9f);
   border-radius: 10px;
   color: white;
 }
@@ -358,7 +367,7 @@ header .navlinks a:hover {
 }
 
 #third main .Text span {
-  color: #E90E7F;
+  color: #ea5a9f;
 }
 
 #third main .Text blockquote {
@@ -414,12 +423,200 @@ header .navlinks a:hover {
   width: 60%;
 }
 
-#fourth {
+#forth {
   font-family: 'Cairo', sans-serif;
   text-align: right;
 }
 
-#fourth main {
+#forth main {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#forth main .container {
+  height: 70%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#forth main .container .mapdiv,
+#forth main .container .text-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+#forth main .container .text-section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+#forth main .container .text-section h2 {
+  font-size: 1.3rem;
+}
+
+#forth main .container .text-section h2 span {
+  color: #ea5a9f;
+}
+
+#forth main .container .text-section .gpssign {
+  fill: #ea5a9f;
+  width: 70px;
+}
+
+#forth main .container .text-section .gpssign:hover {
+  fill: #e64593;
+  -webkit-transition: 0.5s fill ease;
+  transition: 0.5s fill ease;
+}
+
+#forth main .container .text-section p {
+  width: 80%;
+  font-size: 0.9rem;
+}
+
+#forth main .container .map {
+  width: 80%;
+  height: 80%;
+  border-radius: 50px;
+}
+
+#paperheart {
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+}
+
+#paperheart main {
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+#paperheart main .text {
+  color: blue;
+  grid-area: text;
+}
+
+#paperheart main .logo {
+  width: 18rem;
+}
+
+#paperheart main .logo .paperheartlogo {
+  width: 100%;
+}
+
+#paperheart main .paratext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#paperheart main svg {
+  width: 30rem;
+  height: auto;
+}
+
+#paperheart main button {
+  background: linear-gradient(125deg, #c73b4ec4, #c73b4e);
+  border: none;
+  font-family: "Cairo";
+  font-size: 18px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  border-radius: 50px;
+}
+
+#paperheart main path {
+  stroke: #c73b4e;
+  fill: #c73b4e;
+}
+
+#paperheart main .animated {
+  fill-opacity: 0;
+  stroke-width: 10px;
+  stroke-dasharray: 5900;
+  stroke-dashoffset: 5900;
+  -webkit-animation: draw 2s forwards linear;
+          animation: draw 2s forwards linear;
+}
+
+@-webkit-keyframes draw {
+  99% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+@keyframes draw {
+  99% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    fill-opacity: 1;
+  }
+}
+
+#fifth {
+  font-family: 'Cairo', sans-serif;
+  text-align: right;
+}
+
+#fifth main {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -436,12 +633,12 @@ header .navlinks a:hover {
           flex-direction: column;
 }
 
-#fourth main h1 {
+#fifth main h1 {
   padding-bottom: 50px;
-  color: #fe811a;
+  color: #ea5a9f;
 }
 
-#fourth main form {
+#fifth main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -458,7 +655,7 @@ header .navlinks a:hover {
   width: 40vw;
 }
 
-#fourth main form input[type=text] {
+#fifth main form input[type=text] {
   font-family: 'Cairo', sans-serif;
   text-align: right;
   margin: 0 0 20px 0;
@@ -469,7 +666,7 @@ header .navlinks a:hover {
   border-radius: 50px;
 }
 
-#fourth main form textarea {
+#fifth main form textarea {
   font-family: 'Cairo', sans-serif;
   text-align: right;
   padding: 10px;
@@ -479,14 +676,14 @@ header .navlinks a:hover {
   border-radius: 50px;
 }
 
-#fourth main form input[type=submit] {
+#fifth main form input[type=submit] {
   grid-area: bu;
   font-family: 'Cairo', sans-serif;
   width: 120px;
   height: 46px;
   margin: auto;
   border: none;
-  background: linear-gradient(135deg, rgba(255, 123, 10, 0.76), rgba(230, 14, 125, 0.69));
+  background: linear-gradient(135deg, #5ea0ed, #ea5a9f);
   border-radius: 10px;
   color: white;
 }
@@ -552,7 +749,7 @@ footer .container p img {
 }
 
 .social a.black {
-  color: #E60E7D;
+  color: #ea5a9f;
 }
 
 .onepage-pagination li a.active::before {
@@ -565,13 +762,13 @@ footer .container p img {
 }
 
 .onepage-pagination li a.active.black::before {
-  border-color: #E60E7D;
+  border-color: #ea5a9f;
   background: transparent;
 }
 
 .onepage-pagination li a.black:before {
-  border-color: #E60E7D;
-  background: #E60E7D;
+  border-color: #ea5a9f;
+  background: #ea5a9f;
 }
 
 @media only screen and (max-width: 768px) {
@@ -595,6 +792,26 @@ footer .container p img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  #paperheart main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #paperheart main .logo {
+    width: 10rem;
+  }
+  #paperheart main .paratext {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #paperheart main svg {
+    width: 15rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -614,7 +831,7 @@ footer .container p img {
     z-index: 300;
     top: 0;
     left: -20px;
-    background: linear-gradient(135deg, rgba(255, 123, 10, 0.91), rgba(230, 14, 125, 0.8));
+    background: linear-gradient(135deg, #5ea0ed, #ea5a9f);
     opacity: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -717,11 +934,26 @@ footer .container p img {
   #third main .Text blockquote {
     font-size: 1rem;
   }
-  #fourth {
+  #forth main .container {
+    width: 99%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #forth main .container .text-section h2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  #forth main .container .text-section p {
+    width: 90%;
+    font-size: 0.7rem;
+  }
+  #fifth {
     font-family: 'Cairo', sans-serif;
     text-align: right;
   }
-  #fourth main form {
+  #fifth main form {
     width: 80%;
   }
 }
